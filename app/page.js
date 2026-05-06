@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className="flex gap-4">
         <Link
-          href="/shorten"
+          href="/trynow"
           className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition"
         >
           Try Now

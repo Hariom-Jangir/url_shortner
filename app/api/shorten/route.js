@@ -9,8 +9,10 @@ export async function POST(req) {
     await connectDB();
 
     const body = await req.json();
-    const originalUrl = body.url;
-
+    let originalUrl = body.url;
+    if (!originalUrl.startsWith("http://") && !originalUrl.startsWith("https://")) {
+  originalUrl = "https://" + originalUrl;
+}
     const shortCode = generateShortCode();   // generate code
 
     await Url.create({

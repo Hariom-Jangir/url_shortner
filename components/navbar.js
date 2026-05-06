@@ -21,21 +21,14 @@ export default function Navbar() {
             About
           </Link>
 
-          <Link href="/shorten" className="hover:text-gray-200 transition">
+          <Link href="/trynow" className="hover:text-gray-200 transition">
             Shorten
           </Link>
 
-          <Link href="/contact" className="hover:text-gray-200 transition">
-            Contact
-          </Link>
+          
 
           {/* CTA Button */}
-          <Link
-            href="/shorten"
-            className="bg-white text-purple-700 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition"
-          >
-            Try Now
-          </Link>
+          
 
           <Link
             href="https://github.com"
